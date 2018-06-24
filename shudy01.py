@@ -34,5 +34,14 @@ print(food[1][1])
 print(len(food))
 
 
+# tuple 也是python内置的一种有序列表，但tuple一旦初始化就不能修改
+vegetables = ('tomato','potato','cucumber',fruits)
+print(vegetables)
 
+# 所谓的一旦初始化就不能修改 是指 “指向不变”
+# vegetables 中第四个元素是指向fruits的，而fruits是一个可变的list
+# vegetables 初始化时指向了fruits，不能修改为别的对象
+# 即 vegetables[3]不能修改，但是vegetables[3][i]可以修改
+fruits.append('lemon')
+print(vegetables)
 
